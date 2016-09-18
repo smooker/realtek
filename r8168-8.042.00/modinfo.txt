@@ -1,0 +1,54 @@
+filename:       /lib/modules/4.7.4/kernel/drivers/net/ethernet/realtek/r8169.ko
+firmware:       rtl_nic/rtl8107e-2.fw
+firmware:       rtl_nic/rtl8107e-1.fw
+firmware:       rtl_nic/rtl8168h-2.fw
+firmware:       rtl_nic/rtl8168h-1.fw
+firmware:       rtl_nic/rtl8168g-3.fw
+firmware:       rtl_nic/rtl8168g-2.fw
+firmware:       rtl_nic/rtl8106e-2.fw
+firmware:       rtl_nic/rtl8106e-1.fw
+firmware:       rtl_nic/rtl8411-2.fw
+firmware:       rtl_nic/rtl8411-1.fw
+firmware:       rtl_nic/rtl8402-1.fw
+firmware:       rtl_nic/rtl8168f-2.fw
+firmware:       rtl_nic/rtl8168f-1.fw
+firmware:       rtl_nic/rtl8105e-1.fw
+firmware:       rtl_nic/rtl8168e-3.fw
+firmware:       rtl_nic/rtl8168e-2.fw
+firmware:       rtl_nic/rtl8168e-1.fw
+firmware:       rtl_nic/rtl8168d-2.fw
+firmware:       rtl_nic/rtl8168d-1.fw
+version:        2.3LK-NAPI
+license:        GPL
+description:    RealTek RTL-8169 Gigabit Ethernet driver
+author:         Realtek and the Linux r8169 crew <netdev@vger.kernel.org>
+srcversion:     4FB99530D3FD73B83F1B105
+alias:          pci:v00000001d00008168sv*sd00002410bc*sc*i*
+alias:          pci:v00001737d00001032sv*sd00000024bc*sc*i*
+alias:          pci:v000016ECd00000116sv*sd*bc*sc*i*
+alias:          pci:v00001259d0000C107sv*sd*bc*sc*i*
+alias:          pci:v00001186d00004302sv*sd*bc*sc*i*
+alias:          pci:v00001186d00004300sv*sd*bc*sc*i*
+alias:          pci:v00001186d00004300sv00001186sd00004B10bc*sc*i*
+alias:          pci:v000010ECd00008169sv*sd*bc*sc*i*
+alias:          pci:v000010ECd00008168sv*sd*bc*sc*i*
+alias:          pci:v000010ECd00008167sv*sd*bc*sc*i*
+alias:          pci:v000010ECd00008136sv*sd*bc*sc*i*
+alias:          pci:v000010ECd00008129sv*sd*bc*sc*i*
+depends:        mii
+intree:         Y
+vermagic:       4.7.4 SMP preempt mod_unload modversions 
+parm:           use_dac:Enable PCI DAC. Unsafe on 32 bit PCI slot. (int)
+parm:           debug:Debug verbosity level (0=none, ..., 16=all) (int)
+Module                  Size  Used by
+fuse                   90112  2
+dm_crypt               28672  0
+dm_mod                102400  1 dm_crypt
+nvidia_drm             45056  2
+nvidia_modeset        757760  3 nvidia_drm
+joydev                 20480  0
+nvidia              11407360  41 nvidia_modeset
+i2c_piix4              20480  0
+evdev                  24576  2
+r8169                  73728  0
+mii                    16384  1 r8169

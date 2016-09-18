@@ -1,0 +1,1 @@
+cmd_/home/smooker/src/r8168-8.042.00/src/r8168.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/smooker/src/r8168-8.042.00/src/r8168.ko /home/smooker/src/r8168-8.042.00/src/r8168.o /home/smooker/src/r8168-8.042.00/src/r8168.mod.o

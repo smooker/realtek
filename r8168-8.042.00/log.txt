@@ -1,0 +1,33 @@
+-------------------------------
+Sun Sep 18 09:31:19 EEST 2016
+make -C src/ clean
+make[1]: Entering directory '/home/smooker/src/r8168-8.042.00/src'
+make -C /lib/modules/4.7.4/build SUBDIRS=/home/smooker/src/r8168-8.042.00/src clean
+make[2]: Entering directory '/usr/src/linux-4.7.4'
+  CLEAN   /home/smooker/src/r8168-8.042.00/src/.tmp_versions
+  CLEAN   /home/smooker/src/r8168-8.042.00/src/Module.symvers
+make[2]: Leaving directory '/usr/src/linux-4.7.4'
+make[1]: Leaving directory '/home/smooker/src/r8168-8.042.00/src'
+make -C src/ modules
+make[1]: Entering directory '/home/smooker/src/r8168-8.042.00/src'
+make -C /lib/modules/4.7.4/build SUBDIRS=/home/smooker/src/r8168-8.042.00/src modules
+make[2]: Entering directory '/usr/src/linux-4.7.4'
+  CC [M]  /home/smooker/src/r8168-8.042.00/src/r8168_n.o
+  CC [M]  /home/smooker/src/r8168-8.042.00/src/r8168_asf.o
+  CC [M]  /home/smooker/src/r8168-8.042.00/src/rtl_eeprom.o
+  CC [M]  /home/smooker/src/r8168-8.042.00/src/rtltool.o
+  LD [M]  /home/smooker/src/r8168-8.042.00/src/r8168.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/smooker/src/r8168-8.042.00/src/r8168.mod.o
+  LD [M]  /home/smooker/src/r8168-8.042.00/src/r8168.ko
+make[2]: Leaving directory '/usr/src/linux-4.7.4'
+make[1]: Leaving directory '/home/smooker/src/r8168-8.042.00/src'
+make -C src/ install
+make[1]: Entering directory '/home/smooker/src/r8168-8.042.00/src'
+make -C /lib/modules/4.7.4/build SUBDIRS=/home/smooker/src/r8168-8.042.00/src INSTALL_MOD_DIR=kernel/drivers/net/ethernet/realtek modules_install
+make[2]: Entering directory '/usr/src/linux-4.7.4'
+  INSTALL /home/smooker/src/r8168-8.042.00/src/r8168.ko
+  DEPMOD  4.7.4
+make[2]: Leaving directory '/usr/src/linux-4.7.4'
+make[1]: Leaving directory '/home/smooker/src/r8168-8.042.00/src'
